@@ -3,11 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontawesome -->
     <script
       src="https://kit.fontawesome.com/b652ffd5a7.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Flower Market</title>
   </head>
   <body>
@@ -18,13 +27,34 @@
         </div>
         <div class="nav-links">
           <ul class="flex items-center gap-12 text-md">
-            <li class="nav-item font-bold text-[#252432]"><a href="#">Home</a></li>
+            <li class="nav-item font-bold text-[#252432]">
+              <a href="#">Home</a>
+            </li>
             <li class="nav-item text-[#8987A1]"><a href="#">Shop</a></li>
             <li class="nav-item text-[#8987A1]"><a href="#">About</a></li>
-            <li class="nav-item"><a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a></li>
+            <li class="nav-item">
+              <a href="#"
+                ><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
     </header>
+    <main class="main mx-auto max-w-285 px-4 font-[noto-serif]">
+      <section class="hero flex items-end justify-between mb-[118px]">
+        <div class="hero-content w-1/2">
+          <h2 class="hero-title font-bold text-6xl mb-4">ALWAYS <span class="text-[#E95A08]">FRESH FLOWERS</span></h2>
+          <p class="hero-description text-2xl opacity-50">
+            Indulge your senses with the beauty and fragrance of <br> our fresh
+            flower shop. From classic roses to exotic <br> blooms, we offer a wide
+            variety of fresh flowers that <br> are perfect for any occasion.
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="./assets/hero-flower.png" alt="hero flower" />
+        </div>
+      </section>
+    </main>
   </body>
 </html>
