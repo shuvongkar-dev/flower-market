@@ -25,18 +25,18 @@
         <div class="nav-logo">
           <img src="./assets/logo.png" alt="navbar logo" />
         </div>
-        <div class="nav-links">
-          <ul class="flex items-center gap-12 text-md">
-            <li class="nav-item font-bold text-[#252432]">
+        <div class="nav-links ">
+          <ul class="flex items-center gap-12 text-md ">
+            <li class="nav-item hidden lg:block font-bold text-[#252432]">
               <a href="#">Home</a>
             </li>
-            <li class="nav-item text-[#8987A1]"><a href="#">Shop</a></li>
-            <li class="nav-item text-[#8987A1]"><a href="#">About</a></li>
+            <li class="nav-item hidden lg:block text-[#8987A1]"><a href="#">Shop</a></li>
+            <li class="nav-item hidden lg:block text-[#8987A1]"><a href="#">About</a></li>
             <li class="nav-item">
               <a href="#"
                 ><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a
               >
-            </li>
+              <li>
           </ul>
         </div>
       </nav>
@@ -66,7 +66,7 @@
           shop. From <br />
           classic roses to exotic blooms, we offer a wide variety of fresh.
         </p>
-        <div class="cards-container grid grid-cols-4 grid-rows-2 gap-5 mt-12">
+        <div class="cards-container grid grid-cols-2 lg:grid-cols-4 grid-rows-2 gap-5 mt-12">
           <div class="card flex flex-col items-center justify-center">
             <img
               class="card-img mb-[30px] w-full"
@@ -197,11 +197,11 @@
           </div>
         </div>
       </section>
-      <section class="plants-lover flex gap-15 relative">
+      <section class="plants-lover flex gap-15 relative lg:flex-row flex-col mb-29.5">
         <img
           src="./assets/trusted-badge.png"
           alt="badge image"
-          class="badge-image w-[286px] h-[286px] absolute inline-block top-[-130px] left-[350px]"
+          class="badge-image w-[286px] h-[286px] absolute top-[-130px] left-[350px] hidden lg:block"
         />
         <img
           src="./assets/flower-store.png"
@@ -245,7 +245,7 @@
             classic roses to exotic blooms, we offer a wide variety of fresh.
           </p>
         </div>
-        <div class="deals-container grid grid-cols-3 grid-rows-2 gap-5">
+        <div class="deals-container grid grid-cols-1 lg:grid-cols-3 gap-5 ">
           <div
             class="deals-card relative bg-[url('./assets/deal-bloom.png')] bg-cover bg-center w-full h-50 flex flex-col items-center justify-center gap-4 text-white rounded-2xl"
           >
@@ -263,7 +263,7 @@
             </div>
           </div>
           <div
-            class="deals-card relative bg-[url('./assets/deal-zabo.png')] bg-cover bg-center w-full flex flex-col items-center justify-center gap-4 text-white rounded-2xl col-span-2 row-span-2"
+            class="deals-card relative bg-[url('./assets/deal-zabo.png')] bg-cover bg-center w-full flex flex-col items-center justify-center gap-4 text-white rounded-2xl lg:col-span-2 row-span-2"
           >
             <!-- overlay -->
             <div class="absolute inset-0 bg-black/40 rounded-2xl"></div>
@@ -299,23 +299,23 @@
     </main>
     <footer class="footer mt-30 mb-12.5">
       <section class="contact-section bg-[url('./assets/news-letter-bg.png')] bg-cover h-133.25 bg-center py-20 text-center flex flex-col items-center justify-center mb-12.5">
-        <h2 class="contact-title text-[50px] font-bold text-white font-[noto-serif] mb-5.5">Join the colorful Bunch</h2>
+        <h2 class="contact-title lg:text-[50px] text-[20px] font-bold text-white font-[noto-serif] mb-5.5">Join the colorful Bunch</h2>
         <div class="flex justify-center items-center overflow-hidden">
           <input
             type="email"
             name="email"
             id="email"
             placeholder="Write email"
-            class="contact-input w-161.25 h-12.5 outline-none bg-white px-5"
+            class="contact-input lg:w-161.25 h-12.5 outline-none bg-white px-5"
           />
           <button
-            class="contact-button bg-[#E95A08] text-white font-semibold py-2 px-4 hover:bg-[#c74806] transition duration-300 placeholder:text-gray-400 cursor-pointer w-46.25 h-12.5"
+            class="contact-button bg-[#E95A08] text-white font-semibold py-2 px-4 hover:bg-[#c74806] transition duration-300 placeholder:text-gray-400 cursor-pointer lg:w-46.25 h-12.5"
           >
             Subscribe
           </button>
         </div>
       </section>
-      <section class="footer-content mx-auto max-w-285 px-4 flex justify-around">
+      <section class="footer-content mx-auto max-w-285 px-4 flex justify-around lg:flex-row flex-col gap-10">
         <div class="footer-about">
           <img src="./assets/logo.png" alt="Logo" class="mb-4" />
           <span class="text-[22px] opacity-50">Indulge your senses with the <br> beauty and fragrance of our fresh <br> flower shop. </span>
